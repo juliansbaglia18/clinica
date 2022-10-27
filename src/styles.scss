@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('https://img.freepik.com/free-vector/clean-medical-background_53876-116875.jpg?w=2000')
+}
+
+@font-face {
+    font-family: titulo;
+    src: url(assets/fonts/Kanit-Regular.ttf);
+}
+
+.font-titulo{
+    font-family: titulo;
+}
+
+@font-face {
+    font-family: texto;
+    src: url(assets/fonts/Trispace-Regular.ttf);
+}
+
+.font{
+    font-family: texto;
+}

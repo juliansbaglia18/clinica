@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "clinica-sbaglia": {
+      "hosting": {
+        "clinica": [
+          "clinica-sbaglia"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "clinica-sbaglia"
+  }
+}

@@ -1,0 +1,71 @@
+<div class="body d-flex justify-content-center align-items-center">
+  <div class="container-sm" id="container">
+    <form class="form-label" [formGroup]="formReg" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="mb-3">
+          <!-- INGRESAR MAIL -->
+          <label class="form-label text-light font" id="error1">Email</label>
+          <input
+            type="text"
+            class="form-control text-dark"
+            formControlName="email"
+            id="email"
+            #email
+            required
+            placeholder="Ingresar email"
+          />
+        </div>
+
+        <div class="mb-3">
+          <!-- INGRESAR CONTRASEÑA -->
+          <label class="form-label text-light font" id="error2"
+            >Contraseña</label
+          >
+          <input
+            type="password"
+            class="form-control text-dark"
+            formControlName="password"
+            id="password"
+            #password
+            required
+            placeholder="Ingresar contraseña"
+          />
+        </div>
+
+        <!-- REPETIR CONTRASEÑA -->
+        <div class="mb-3">
+          <label class="form-label text-light font" id="error2"
+            >Repetir contraseña</label
+          >
+          <input
+            type="password"
+            id="check_password"
+            class="form-control text-dark"
+            formControlName="check_password"
+            placeholder="Repetir contraseña"
+          />
+        </div>
+      </div>
+
+      <!-- BOTONES -->
+      <div class="row justify-content-around">
+        <!-- SUBMIT -->
+        <input
+          type="submit"
+          routerLink="/register/complete"
+          class="btn btn-redondo col-xl-5 col-sm-5 text-light font-titulo"
+          value="Continuar"
+        />
+
+        <!-- YA ESTOY REGISTRADO -->
+        <button
+          class="btn btn-redondo col-xl-5 col-sm-8 text-light font-titulo"
+          routerLink="/login"
+        >
+          <div href="#" class="brillo"></div>
+          Ya tengo cuenta!
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

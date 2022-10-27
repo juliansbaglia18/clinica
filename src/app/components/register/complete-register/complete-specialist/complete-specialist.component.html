@@ -1,0 +1,87 @@
+<div class="body d-flex justify-content-center align-items-center">
+  <div class="container-sm" id="container">
+    <form class="form-label">
+      <div class="row">
+        <!-- INGRESAR NOMBRE -->
+        <div class="mb-3">
+          <label class="form-label text-light font" id="error1">Nombre</label>
+          <input
+            type="text"
+            class="form-control text-dark"
+            formControlName="nombre"
+            id="nombre"
+            required
+            placeholder="Ingresar nombre"
+          />
+        </div>
+
+        <!-- INGRESAR APELLIDO -->
+        <div class="mb-3">
+          <label class="form-label text-light font" id="error1">Apellido</label>
+          <input
+            type="text"
+            class="form-control text-dark"
+            formControlName="apellido"
+            id="apellido"
+            required
+            placeholder="Ingresar apellido"
+          />
+        </div>
+
+        <!-- INGRESAR EDAD -->
+        <div class="mb-3">
+          <label class="form-label text-light font" id="error1">edad</label>
+          <input
+            type="number"
+            class="form-control text-dark"
+            formControlName="edad"
+            id="edad"
+            required
+            placeholder="Ingresar edad"
+          />
+        </div>
+
+        <!-- INGRESAR DNI -->
+        <div class="mb-3">
+          <label class="form-label text-light font" id="error1">D.N.I.</label>
+          <input
+            type="number"
+            class="form-control text-dark"
+            formControlName="dni"
+            id="dni"
+            required
+            placeholder="Ingresar DNI"
+          />
+        </div>
+
+        <!-- INGRESAR ESPECIALIDAD -->
+        <div class="mb-3">
+          <label class="form-label text-light font" id="error1"
+            >Especialidad</label
+          >
+          <input
+            type="text"
+            class="form-control text-dark"
+            formControlName="especialidad"
+            id="especialidad"
+            required
+            placeholder="Ingresar especialidad"
+          />
+        </div>
+      </div>
+
+      <!-- BOTONES -->
+      <div class="row justify-content-around">
+        <!-- SUBMIT -->
+        <input
+          type="submit"
+          class="btn btn-redondo col-xl-5 col-sm-5 text-light font-titulo"
+          value="Registrarse"
+        />
+      </div>
+    </form>
+    <div class="alert alert-danger font">
+      Una vez que se registre, deberá ser aprobado por un administrador.
+    </div>
+  </div>
+</div>

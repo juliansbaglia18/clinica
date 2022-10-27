@@ -1,0 +1,105 @@
+<div class="body d-flex justify-content-center align-items-center">
+  <div class="container-sm" id="container">
+    <form class="form-label" [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="mb-3">
+          <!-- INGRESAR MAIL -->
+          <label class="form-label text-light font" id="error1">Email</label>
+          <input
+            type="text"
+            class="form-control text-dark"
+            formControlName="email"
+            id="email1"
+          />
+        </div>
+        <div class="mb-3">
+          <!-- INGRESAR CONTRASEÑA -->
+          <label class="form-label text-light font" id="error2"
+            >Contraseña</label
+          >
+          <input
+            type="password"
+            id="contraseña"
+            class="form-control text-dark"
+            formControlName="password"
+          />
+        </div>
+      </div>
+
+      <!-- BOTONES -->
+      <div class="row justify-content-around">
+        <!-- LOGUEARSE -->
+        <input
+          type="submit"
+          class="btn btn-redondo col-xl-5 col-sm-5 text-light font-titulo"
+          value="Ingresar"
+        />
+
+        <!-- REGISTRARSE -->
+        <button
+          class="btn btn-redondo col-xl-5 col-sm-8 text-light font-titulo"
+          routerLink="/register"
+        >
+          <div href="#" class="brillo"></div>
+          Registrarse
+        </button>
+      </div>
+      <br />
+
+      <!-- ACCESO RÁPIDO -->
+      <div class="accesos-rapidos row alert alert-info">
+        <div class="col-2 font-titulo align-items-center d-flex">
+          <h3 class="h3">ACCESOS RÁPIDOS</h3>
+        </div>
+        <div class="col-10">
+          <div class="row justify-content-around text-center font d-flex">
+            <div class="col-3 acceso-rapido">
+              paciente1
+              <img
+                src="../../../assets/acceso-rapido/paciente1.jpg"
+                class="img rounded-circle col-4"
+              />
+            </div>
+            <div class="col-3 acceso-rapido">
+              paciente2
+              <img
+                src="../../../assets/acceso-rapido/paciente2.jpg"
+                class="img rounded-circle col-4"
+              />
+            </div>
+            <div class="col-3 acceso-rapido">
+              paciente3
+              <img
+                src="../../../assets/acceso-rapido/paciente3.jpg"
+                class="img rounded-circle col-4"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-around text-center font">
+            <div class="col-3 acceso-rapido">
+              especialista1
+              <img
+                src="../../../assets/acceso-rapido/especialista1.jpg"
+                class="img rounded-circle col-4"
+              />
+            </div>
+            <div class="col-3 acceso-rapido">
+              especialista2
+              <img
+                src="../../../assets/acceso-rapido/especialista2.jpg"
+                class="img rounded-circle col-4"
+              />
+            </div>
+            <div class="col-3 acceso-rapido">
+              admin
+              <img
+                src="../../../assets/acceso-rapido/admin.png"
+                class="img rounded-circle col-4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
